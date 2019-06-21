@@ -1,0 +1,82 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    {{ title }}
+  </h1>
+<div class = "register_form">
+  <form [formGroup] = "data_form">
+    <table>
+      <tr>
+        <td><input placeholder = "First Name" class = "first_name" formControlName = "first_name" [(ngModel)] = "firstName"/></td>
+        <td>
+          <div>
+            <span style = "color: red;" *ngIf = "!data_form.valid">*</span>
+          </div>
+        </td>
+      </tr>
+
+      <tr>
+        <td><input placeholder = "Surname" class = "surname" formControlName = "surname" [(ngModel)] = "surName"/></td>
+        <td>
+          <div>
+            <span style = "color: red;" *ngIf = "!data_form.valid">*</span>
+          </div>
+        </td>
+      </tr>
+
+      <tr>
+        <td><input placeholder = "Age" class = "age" formControlName = "age" [(ngModel)] = "Ages"/></td>
+        <td>
+          <div>
+            <span style = "color: red;" *ngIf = "!data_form.valid">*</span>
+          </div>
+        </td>
+      </tr>
+
+      <tr>
+        <td><input placeholder = "Email" class = "email" formControlName = "email" [(ngModel)] = "eMail"/></td>
+        <td>
+          <div>
+            <span style = "color: red;" *ngIf = "!data_form.valid">*</span>
+          </div>
+        </td>
+      </tr>
+
+      <tr>
+        <td><input placeholder = "Cell Number" class = "cell_number" formControlName = "cell_number" [(ngModel)] = "cellNumber"/></td>
+        <td>
+          <div>
+            <span style = "color: red;" *ngIf = "!data_form.valid">*</span>
+          </div>
+        </td>
+      </tr>
+
+      <tr>
+        <td> <button mat-raised-button color="primary" (click) = "addStudents()">Register</button></td>
+      </tr>
+    </table>
+  </form>
+</div>
+
+<section>
+  <mat-card class="example-card" *ngFor = "let students of StudentInfo" style = "width: 1000px;margin: 20px auto; ">
+    <mat-card-content>
+      <h3>
+        Student Name: {{students.studentName}}
+      </h3>
+      <h3>
+        Student Surname: {{students.studentSurname}}
+      </h3>
+      <h3>
+        Student Age: {{students.studentAge}}
+      </h3>
+      <h3>
+        Student Email: {{students.studentEmail}}
+      </h3>
+      <h3>
+        Student Contacts: {{students.studentContacts}}
+      </h3>
+    </mat-card-content>
+  </mat-card>
+</section>
+<router-outlet></router-outlet>
