@@ -7,7 +7,7 @@ import {FormBuilder,Validators} from '@angular/forms';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'RegistrationSystem';
+  title = 'Registration System';
   data_form;
   first_name;
   surname;

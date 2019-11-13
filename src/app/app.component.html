@@ -1,8 +1,10 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div style="text-align:center">
-  <h1>
+  <hr style = "background-color: white;">
+  <p>
     {{ title }}
-  </h1>
+  </p>
+
 <div class = "register_form">
   <form [formGroup] = "data_form">
     <table>
@@ -19,7 +21,7 @@
         <td><input placeholder = "Surname" class = "surname" formControlName = "surname" [(ngModel)] = "surName"/></td>
         <td>
           <div>
-            <span style = "color: red;" *ngIf = "!data_form.valid">*</span>
+            <!-- <span style = "color: red;" *ngIf = "!data_form.valid">*</span> -->
           </div>
         </td>
       </tr>
@@ -28,7 +30,7 @@
         <td><input placeholder = "Age" class = "age" formControlName = "age" [(ngModel)] = "Ages"/></td>
         <td>
           <div>
-            <span style = "color: red;" *ngIf = "!data_form.valid">*</span>
+            <!-- <span style = "color: red;" *ngIf = "!data_form.valid">*</span> -->
           </div>
         </td>
       </tr>
@@ -37,7 +39,7 @@
         <td><input placeholder = "Email" class = "email" formControlName = "email" [(ngModel)] = "eMail"/></td>
         <td>
           <div>
-            <span style = "color: red;" *ngIf = "!data_form.valid">*</span>
+            <!-- <span style = "color: red;" *ngIf = "!data_form.valid">*</span> -->
           </div>
         </td>
       </tr>
@@ -46,17 +48,30 @@
         <td><input placeholder = "Cell Number" class = "cell_number" formControlName = "cell_number" [(ngModel)] = "cellNumber"/></td>
         <td>
           <div>
-            <span style = "color: red;" *ngIf = "!data_form.valid">*</span>
+            <!-- <span style = "color: red;" *ngIf = "!data_form.valid">*</span> -->
           </div>
         </td>
       </tr>
 
       <tr>
-        <td> <button mat-raised-button color="primary" (click) = "addStudents()">Register</button></td>
+        <td> 
+          <!-- <button mat-raised-button color="primary" (click) = "addStudents()">Register</button> -->
+          <button (click) = "addStudents()">Register</button>
+        </td>
       </tr>
     </table>
   </form>
 </div>
+
+<aside>
+  <p style = "font-size: 15px;">Follow Us</p>
+  <p>
+    <img src = "assets/logo/icons8-facebook-f-500 (1).png" alt = "facebook" width = "23" style = "background-color: rgba(255, 255, 255,0.2);margin: 15px;padding: 10px;border-radius: 20px;"/>
+    <img src = "assets/logo/icons8-twitter-500 (1).png" alt = "twitter" width = "23" style = "background-color: rgba(255, 255, 255,0.2);margin: 15px;padding: 10px;border-radius: 20px;"/>
+    <img src = "assets/logo/icons8-instagram-500 (1).png" alt = "instagram" width = "23" style = "background-color: rgba(255, 255, 255,0.2);margin: 15px;padding: 10px;border-radius: 20px;"/>
+    <img src = "assets/logo/icons8-play-button-50 (1).png" alt = "youtube" width = "23" style = "background-color: rgba(255, 255, 255,0.2);margin: 15px;padding: 10px;border-radius: 20px;"/>
+  </p>
+</aside>
 
 <section>
   <mat-card class="example-card" *ngFor = "let students of StudentInfo" style = "width: 1000px;margin: 20px auto; ">

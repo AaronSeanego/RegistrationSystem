@@ -1,68 +1,136 @@
 @charset "UTF-8";
 
+div {}
+
+div p {
+    font-family: 'Montserrat',arial;
+    color: white;
+    font-style: unset;
+    font-size: 40px;
+}
+
 .register_form {
-    float: left;
-    width: 500px;
     height: 100%;
 }
 
 .register_form form {
     margin-left: 200px;
+    margin: 130px auto;
+    width: 340px;
+    /* background-color: rgba(255,255,255,0.3); */
+    padding: 10px;
 }
 
-.register_form form table {}
+.register_form form table {
+    margin: auto;
+}
 
 .register_form form table tr {}
 
 .register_form form table tr td {}
 
 .register_form form table tr td .first_name {
-    width: 250px;
-    padding: 8px;
-    border: 1px solid white;
-    border-radius: 5px;
-    background: transparent;
-    color: white;
+    width: 300px;
+    padding: 10px;
+    /* border: 1px solid white; */
+    border-style: unset;
+    border-radius: 8px;
+    background: rgba(255,255,255,0.4);
+    color: black;
     margin: 5px;
+    outline: none;
+    position: relative;
+    z-index: 1;
 }
+
+.register_form form table tr td .first_name::placeholder {
+    color: rgba(0,0,0,0.6);
+}
+
 .register_form form table tr td .surname {
-    width: 250px;
-    padding: 8px;
-    border: 1px solid white;
-    border-radius: 5px;
-    background: transparent;
-    color: white;
+    width: 300px;
+    padding: 10px;
+    /* border: 1px solid white; */
+    border-style: unset;
+    border-radius: 8px;
+    background: rgba(255,255,255,0.4);
+    color: black;
     margin: 5px;
+    outline: none;
+    position: relative;
+    z-index: 1;
+}
+
+.register_form form table tr td .surname::placeholder {
+    color: rgba(0,0,0,0.6);
 }
 
 .register_form form table tr td .age {
-    width: 250px;
-    padding: 8px;
-    border: 1px solid white;
-    border-radius: 5px;
-    background: transparent;
-    color: white;
+    width: 300px;
+    padding: 10px;
+    /* border: 1px solid white; */
+    border-style: unset;
+    border-radius: 8px;
+    background: rgba(255,255,255,0.4);
+    color: black;
     margin: 5px;
+    outline: none;
+    position: relative;
+    z-index: 1;
+}
+
+.register_form form table tr td .age::placeholder {
+    color: rgba(0,0,0,0.6);
 }
 
 .register_form form table tr td .email {
-    width: 250px;
-    padding: 8px;
-    border: 1px solid white;
-    border-radius: 5px;
-    background: transparent;
-    color: white;
+    width: 300px;
+    padding: 10px;
+    /* border: 1px solid white; */
+    border-style: unset;
+    border-radius: 8px;
+    background: rgba(255,255,255,0.4);
+    color: black;
     margin: 5px;
+    outline: none;
+    position: relative;
+    z-index: 1;
+}
+
+.register_form form table tr td .email::placeholder {
+    color: rgba(0,0,0,0.6);
 }
 
 .register_form form table tr td .cell_number {
-    width: 250px;
-    padding: 8px;
-    border: 1px solid white;
-    border-radius: 5px;
-    background: transparent;
-    color: white;
+    width: 300px;
+    padding: 10px;
+    /* border: 1px solid white; */
+    border-style: unset;
+    border-radius: 8px;
+    background: rgba(255,255,255,0.4);
+    color: black;
     margin: 5px;
+    outline: none;
+    position: relative;
+    z-index: 1;
+}
+
+.register_form form table tr td .cell_number::placeholder {
+    color: rgba(0,0,0,0.6);
+}
+
+.register_form form table tr td button {
+    margin-top: 50px;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100px;
+    background: rgba(10, 115, 235,0.9);
+    border-style: unset;
+    border-radius: 6px;
+    color: white;
+    font-family: 'Montserrat',arial;
 }
 
 section {
